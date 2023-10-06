@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-link-slider {
+  @apply bg-transparent;
+}
+
+.tab-link.active .tab-link-slider {
+  @apply bg-green-dark;
+  animation: fadeEffect 200ms ease-in-out;
+  animation: fadeWidthEffect 200ms ease-in-out;
+}
+
+.tab-content {
+  @apply hidden;
+}
+
+.tab-content.active {
+  @apply block;
+  animation: fadeEffect 400ms ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeWidthEffect {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -667,6 +667,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -677,6 +682,10 @@ video {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
@@ -761,6 +770,10 @@ video {
     gap: 0px;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-\[14px\] {
     font-size: 14px;
   }
@@ -775,6 +788,11 @@ video {
 }
 
 @media (min-width: 992px) {
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:pb-12 {
     padding-bottom: 3rem;
   }
